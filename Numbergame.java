@@ -9,14 +9,12 @@ public class Numbergame{
         Scanner inp = new Scanner(System.in);
         System.out.println("Welcome to your Game , Enter 1 to know the rules of this game else 0 to continue :");
         int n = inp.nextInt();
-        if(n==1)
-        {
+        if(n==1) {
             System.out.println("The Random number is in the range of 0 to 100");
             System.out.println("The limit of this game is 5 chances");
             System.out.println("You can play this game in multiple rounds");
             System.out.println("Enjoy the game, ThankYou");
         }
-        inp.close();
     }
     public static void main(String[] args)
     {
@@ -25,7 +23,7 @@ public class Numbergame{
        int rand = generateRandom(1,100);
 
        // lets check how good is user to guess this number
-    //    welcomePlayer();
+        welcomePlayer();
        System.out.println("Enter your Guess to check you are right or wrong: ");
        int score = 1,round = 1;
        int limit = 5;
@@ -55,6 +53,7 @@ public class Numbergame{
                     limit = 5;
                     rand = generateRandom(1, 100);
                     round++;
+                    System.out.println("Enter your Guess to check you are right or wrong: ");
                 }
             }
        }while(limit>0);
