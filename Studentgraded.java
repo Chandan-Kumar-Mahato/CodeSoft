@@ -39,7 +39,7 @@ public class Studentgraded {
         // lets make sure that there are four subject
         float Physic=0,Math=0,Chemistry=0,English=0,Health=0;
         int noOfSubject = 5;
-        System.out.println("Enter the subject mark");
+        System.out.print("Enter the subject mark");
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the mark of Physics: ");
         Physic = sc.nextFloat();
